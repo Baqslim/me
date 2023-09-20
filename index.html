@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<style>
+      	.rotate {
+    		animation: rotation 2s infinite ease-out;
+  		}
+        
+        .faded {
+        	animation: unfocused 2s infinite linear alternate;
+        }
+
+  		@keyframes rotation {
+ 	   		from {
+      			transform: rotate(0deg);
+    		}
+    		to {
+      			transform: rotate(719deg);
+   			}
+  		}
+        
+        @keyframes unfocused {
+  			0%   {color: powderblue;}
+  			100%  {color: darkslategrey;}
+        }
+        
+        @keyframes example {
+        	0% {color: powderblue; background-color: darkslategrey;}
+			100% {color: darkslategrey; background-color: powderblue;}
+        }
+        
+/* */
+        
+  	 	body {
+        	background-color: powderblue;
+        }
+        
+       	hr{
+     	   	background-color: powderblue;
+   		   	border: 2px solid darkslategrey;
+            padding-left: 0; 
+            height: 2px;
+   	 	}
+        
+        h1 {
+        	font-family: "Times New Roman", Times, serif;
+       		background-color: darkslategrey;
+        	color: powderblue;
+        	text-align: center;
+            margin: auto
+        }
+        
+        p {
+       		font-family: "Times New Roman", Times, serif;
+    	    color: darkslategrey;
+        	text-align: center;
+        }
+        
+        ul {
+        	font-family: "Times New Roman", Times, serif;
+        	margin: auto;
+            background-color: darkslategrey;
+            color: powderblue;
+        	text-align: center;
+			padding-left: 0; 
+        	width: 50%;
+        }
+        
+        input {
+			font-family: "Times New Roman", Times, serif;
+        	margin: auto;
+            background-color: darkslategrey;
+            color: powderblue;
+            text-align: center;
+            padding-left: 0;
+            width: 100%;
+            border: 0px;
+       	}
+        
+        a {
+        	font-family: "Times New Roman", Times, serif;
+        	margin: auto;
+            background-color: darkslategrey;
+            color: powderblue;
+        	text-align: center;
+			padding-left: 0; 
+        	width: 50%;
+        }
+
+		a:hover {
+        	animation-name: example;
+            animation-duration: 2s;
+			animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+        }
+	</style>
+<!-- -->
+	<head>
+		<title>Page Title</title>
+	</head>
+<!-- -->
+	<body>
+		<h1><hr class="fadedbg">header<hr class="fadedbg"></h1>
+        <ul style="width:100%" class="faded">
+        	[| 
+			<a href="https://www.google.com">do thing</a> |
+        	<a href="https://www.google.com">do other thing</a> |
+            <a href="https://www.google.com">do something</a>
+             |]
+		</ul>
+		<br>
+        <p class="rotate">v2</p>
+		<p>text normal text</p>
+        <p style="float:left">floaty text wow</p>
+        <p style="float:right">floaty text 2</p>
+        <ul>more in depth stuff how does this look when it overflows</ul><br>
+        <ul style="float:left">fee fi fough</ul>
+        <ul style="float:right">thumb</ul><br><br>
+        <ul style="float:left">bizarre</ul><br>
+        <ul style="float:right">formatting</ul><br>
+        <ul style="float:left">stuff</ul><br><br>
+	</body>
+</html>
