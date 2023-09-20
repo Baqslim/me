@@ -15,16 +15,26 @@
       }
     }
 
-    @keyframes example {
+    .spin {
+      animation-name: spin;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+      animation-timing-function: linear;
+    }
+
+    @keyframes spin {
       0% {
-        color: powderblue;
-        background-color: darkslategrey;
+        transform-origin: center;
+        transform: rotate3d(0, 0, 0, 0deg);
       }
 
       100% {
-        color: darkslategrey;
-        background-color: powderblue;
+        transform-origin: center;
+        transform: rotate3d(0, 720, 0, 720deg)
       }
+
+      ;
     }
 
     /* */
@@ -82,36 +92,44 @@
       text-align: center;
       padding-left: 0;
       width: 50%;
+      transition-property: background-color, color;
+      transition-duration: .5s ease-out;
+      transition-timing-function: ease-out;
     }
 
     a:hover {
-      animation-name: example;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: ease-in;
+      background-color: powderblue;
+      color: darkslategrey;
     }
   </style>
   <!-- -->
   <!-- -->
   <body>
     <h1>
-      <hr>BISMALQ
+      <hr> <div class="spin">BISMALQ</div>
       <hr>
     </h1>
     <ul style="width:100%" class="faded"> [| <a href="https://www.google.com">this</a> | <a href="https://www.google.com">is</a> | <a href="https://www.google.com">under</a> | <a href="https://www.google.com">construction!</a> |] </ul>
     <br>
-    <p>please be patient</p>
-    <p class="faded" style="float:left;margin:auto">it WILL take a while</p>
+    <p>now you may be thinking to yourself...<br>wow! a personal website made on github pages! you must be a loser!</p>
+    <ul>yeah i am a loser <br><br> but on the bright side i get access to really cool tools that i don't get on carrd or pronouns so i'll take it okay.</ul>
+    <br>
+    <ul>no offense to those websites though, they are also really cool i just want more freedom.</ul>
+    <br>
+    <p>also this can serve more purposes than just a description.</p>
+    <p>i can show you things you can't even comprehend.</p>
+    <p class="faded">(nor can i really.)</p>
+    <p>oh yeah also if you're suseptive to epilepsy or are photosensitive then...</p>
+    <ul><b>this is your only warning.<br>get out while you still can.</b></ul>
+    <br>
+    <p>ok but really i just think some of the contents of this website may flare up those conditions.<br>so for your well being i suggest you get off.</p>
+    <br>
+    <br>
+    <p>this website is still incomplete and it'll be finished soon.</p>
+        <p class="faded" style="float:left;margin:auto">it WILL take a while</p>
     <p class="faded" style="float:right;margin:auto">it WILL NOT take a while</p>
-    <ul>it may take a while. <br> quite a while, infact.</ul>
-    <br>
-    <ul style="float:left">just give me a bit</ul>
-    <ul style="float:right">i'll get it figured out alright?</ul>
-    <br>
-    <br>
     <p>just trust me on this...</p>
-	<p>alright?</p>
+    <p>alright?</p>
     <br>
   </body>
 </html>
