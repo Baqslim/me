@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .container {
+      height: 600px
+    }
+
+    .awesome {
+      width: 100%;
+      color: powderblue;
+      background-color: powderblue;
+      margin: auto;
+      text-align: center;
+      animation-name: awesome;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+      animation-timing-function: ease-in;
+      animation-direction: alternate;
+      height: 20px;
+    }
+
+    .spin {
+      animation-name: spin;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+      animation-timing-function: linear;
+    }
+
+    @keyframes spin {
+      0% {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 0, 0deg);
+      }
+
+      100% {
+        transform-origin: center;
+        transform: rotate3d(0, 720, 0, 720deg)
+      }
+    }
+
+    @keyframes awesome {
+      0% {
+        background-color: powderblue;
+        color: powderblue;
+        height: 20px
+      }
+
+      100% {
+        background-color: darkslategrey;
+        color: powderblue;
+        height: 40px
+      }
+    }
+
+    body {
+      background-color: darkslategrey;
+    }
+
+    hr {
+      background-color: powderblue;
+      border: 2px solid darkslategrey;
+      padding-left: 0;
+      height: 2px;
+    }
+
+    p {
+      font-family: "Times New Roman", Times, serif;
+      margin: auto;
+      text-align: center;
+      color: powderblue;
+    }
+
+    h1 {
+      font-family: "Times New Roman", Times, serif;
+      background-color: darkslategrey;
+      color: powderblue;
+      text-align: center;
+      margin: auto
+    }
+
+    a {
+      font-family: "Times New Roman", Times, serif;
+      margin: auto;
+      background-color: darkslategrey;
+      color: powderblue;
+      text-align: center;
+      padding-left: 0;
+      width: 50%;
+      transition-property: background-color, color;
+      transition-duration: .5s ease-out;
+      transition-timing-function: ease-out;
+    }
+
+    a:hover {
+      background-color: powderblue;
+      color: darkslategrey;
+    }
+  </style>
+  <body>
+    <!-- Start your code here -->
+    <h1>
+        <hr>
+        <div class="spin">404</div>
+        <hr>
+    </h1>
+    <br>
+    <p>oops... that page was...</p>
+    <br>
+    <div class=container>
+      <p class="awesome">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: .2s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: .4s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: .6s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: .8s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 1s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 1.2s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 1.4s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 1.6s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 1.8s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 2s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 2.2s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 2.4s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 2.6s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 2.8s;">NOT FOUND!</p>
+      <p class="awesome" style="animation-delay: 3s;">NOT FOUND!</p>
+    </div>
+    <p>better luck next time!</p>
+    <br>
+    <p>or maybe you just forgot <a href="https://www.google.com">something</a>
+    </p>
+    <!-- End your code here -->
+  </body>
+</html>
